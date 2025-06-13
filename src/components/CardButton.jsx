@@ -13,3 +13,4 @@ export default function CardButton({ label, link }) {
     </a>
   );
 }
+

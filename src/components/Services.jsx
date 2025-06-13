@@ -2,13 +2,20 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Services.css';
 
+import serv1 from '../assets/serv1.jpg';
+import serv2 from '../assets/serv2.jpg';
+import serv3 from '../assets/serv3.jpg';
+import serv4 from '../assets/serv4.jpg';
+import serv5 from '../assets/serv5.jpg';
+
 const services = [
-  { title: 'Unha Pé e Mão', img: '/assets/serv1.jpg' },
-  { title: 'Só Mão',      img: '/assets/serv2.jpg' },
-  { title: 'Só Pé',       img: '/assets/serv3.jpg' },
-  { title: 'Alongamento', img: '/assets/serv4.jpg' },
-  // etc.
+  { title: 'Unha Pé e Mão', img: serv1 },
+  { title: 'Só Pé',        img: serv2 },
+  { title: 'Só Mão',         img: serv3 },
+  { title: 'Alongamento',   img: serv4 },
+  { title: 'Banho em gel ',   img: serv5 },
 ];
+
 
 export default function Services() {
   return (

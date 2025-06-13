@@ -21,7 +21,7 @@ export default function About() {
         transition={{ delay: 0.5 }}
       >
         <h2>Sobre Mim</h2>
-        <p>Texto provisório sobre o estúdio …</p>
+        <p>Texto provisório sobre o estúdio em breve dicas de unhas e muito mais para você ficar por dentro…</p>
       </motion.div>
     </div>
   );

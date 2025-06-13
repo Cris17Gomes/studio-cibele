@@ -1,0 +1,26 @@
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.card-button {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px 20px;
+  background: linear-gradient(to right, #ff69b4, #9932cc);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+}
+
+.card-button:hover {
+  transform: scale(1.05);
+}
