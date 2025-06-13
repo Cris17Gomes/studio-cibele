@@ -5,7 +5,7 @@ import './Footer.css';
 export default function Footer() {
   return (
     <footer className="footer">
-      <a href="https://instagram.com/seuPerfil" target="_blank" rel="noreferrer">
+      <a href="https://www.instagram.com/cibelegomesnails?igsh=MWNlaTVkbG0zemFjdQ==" target="_blank" rel="noreferrer">
         <FaInstagram size={30} color="#ff69b4"/>
       </a>
       <a href="https://wa.me/5511985594558" target="_blank" rel="noreferrer">

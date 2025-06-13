@@ -4,9 +4,10 @@ import HomeButtons from './components/HomeButtons';
 import About from './components/About';
 import Services from './components/Services';
 import Blog from './components/Blog';
-import MapSection from './components/MapSection';
+// import MapSection from './components/MapSection';
 import Footer from './components/Footer';
 import './App.css';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -26,9 +27,11 @@ function App() {
         <Blog />
       </section>
 
-      <section id="mapa">
+      <ScrollToTop />
+
+      {/* <section id="mapa">
         <MapSection />
-      </section>
+      </section> */}
 
       <Footer />
     </div>

@@ -1,15 +1,15 @@
-// src/components/Blog.jsx
+// src/components/Blog.js
 import React from 'react';
+import './Blog.css';
 
 export default function Blog() {
   return (
-    <div id="blog" style={{ padding: '40px 20px', background: '#f9f9f9' }}>
+    <div className="blog-container">
       <h2>Dicas de Unhas</h2>
       <p>Brevemente dicas e tutoriais incríveis para manter suas unhas lindas!</p>
-      <p>fjnfnfknfqnkfnkcnk  cnqksnfkqwnfkqnfkqnfkqwn kdn knkfnkwnfkqndfkqwnq nkcn</p>
-        <p>fjnfnfknfqnkfnkcnk  cnqksnfkqwnfkqnfkqnfkqwn kdn knkfnkwnfkqndfkqwnq nkcn</p>
-        <p>fjnfnfknfqnkfnkcnk  cnqksnfkqwnfkqnfkqnfkqwn kdn knkfnkwnfkqndfkqwnq nkcn</p>
-        <p>fjnfnfknfqnkfnkcnk  cnqksnfkqwnfkqnfkqnfkqwn kdn knkfnkwnfkqndfkqwnq nkcn</p>
+      <p>Exemplo de dica 1 sobre cuidados e beleza das unhas.</p>
+      <p>Exemplo de dica 2 sobre esmaltação e tendências.</p>
+      <p>Mais conteúdo será adicionado em breve!</p>
     </div>
   );
 }
