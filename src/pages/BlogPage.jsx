@@ -32,7 +32,7 @@ export default function BlogPage() {
         </a>
 
         <a
-          href="https://wa.me/?text=Confira%20essa%20dica%20de%20unha%20linda!%20https://seusite.com/blog"
+          href="https://wa.me/?text=Confira%20essa%20dica%20de%20unha%20linda!%20https://https://studio-cibele.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
         >
