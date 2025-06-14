@@ -1,0 +1,44 @@
+.blog-container {
+  padding: 40px 20px;
+  background: #fff0f5;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.video-wrapper {
+  margin: 20px 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.blog-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.blog-buttons a {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ff69b4, #9932cc);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.blog-buttons a:hover {
+  transform: scale(1.05);
+}

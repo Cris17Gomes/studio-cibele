@@ -1,16 +1,25 @@
 import React from 'react';
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp, FaGithub } from 'react-icons/fa';
 import './Footer.css';
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <a href="https://www.instagram.com/cibelegomesnails?igsh=MWNlaTVkbG0zemFjdQ==" target="_blank" rel="noreferrer">
-        <FaInstagram size={30} color="#ff69b4"/>
-      </a>
-      <a href="https://wa.me/5511985594558" target="_blank" rel="noreferrer">
-        <FaWhatsapp size={30} color="#9932cc"/>
-      </a>
+      <div className="footer-icons">
+        <a href="https://www.instagram.com/cibelegomesnails?igsh=MWNlaTVkbG0zemFjdQ==" target="_blank" rel="noreferrer">
+          <FaInstagram size={30} color="#ff69b4"/>
+        </a>
+        <a href="https://wa.me/5511985594558" target="_blank" rel="noreferrer">
+          <FaWhatsapp size={30} color="#9932cc"/>
+        </a>
+        <a href="https://github.com/Cris17Gomes" target="_blank" rel="noreferrer">
+          <FaGithub size={30} color="#000"/>
+        </a>
+      </div>
+      <p className="footer-text">
+  © 2025 Desenvolvido por Cristiano Gomes. Todos os direitos reservados.
+</p>
+
     </footer>
   );
 }

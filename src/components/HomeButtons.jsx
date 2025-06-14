@@ -9,7 +9,7 @@ const buttons = [
   { label: 'Deixe sua avaliação', link: 'https://g.page/r/CWmSY_cc0ueEEAE/review', external: true },
   { label: 'Sobre Mim', link: '#sobre' },
   { label: 'Nossos Serviços', link: '#servicos' },
-  { label: 'Dicas de Unhas', link: '#blog' },
+  { label: 'Dicas de Unhas', link: '/blog', external: true }
 ];
 
 export default function HomeButtons() {

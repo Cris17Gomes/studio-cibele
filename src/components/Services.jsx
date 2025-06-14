@@ -7,6 +7,8 @@ import serv2 from '../assets/serv2.jpg';
 import serv3 from '../assets/serv3.jpg';
 import serv4 from '../assets/serv4.jpg';
 import serv5 from '../assets/serv5.jpg';
+import serv6 from '../assets/serv6.jpg';
+
 
 const services = [
   { title: 'Unha Pé e Mão', img: serv1 },
@@ -14,6 +16,8 @@ const services = [
   { title: 'Só Mão',         img: serv3 },
   { title: 'Alongamento',   img: serv4 },
   { title: 'Banho em gel ',   img: serv5 },
+  { title: 'Plástica dos Pés ',   img: serv6 },
+
 ];
 
 
