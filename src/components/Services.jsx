@@ -11,7 +11,7 @@ import serv6 from '../assets/serv6.jpg';
 
 
 const services = [
-  { title: 'Unha Pé e Mão', img: serv1 },
+  { title: 'Pé e Mão', img: serv1 },
   { title: 'Só Pé',        img: serv2 },
   { title: 'Só Mão',         img: serv3 },
   { title: 'Alongamento',   img: serv4 },

@@ -20,7 +20,7 @@ export default function BlogPage() {
 </div>
 
 
-      <p>Dica: Para uma francesinha perfeita, use fita adesiva ou moldes.</p>
+      <p>Dica: Para uma francesinha perfeita.</p>
 
       <div className="blog-buttons">
         <a

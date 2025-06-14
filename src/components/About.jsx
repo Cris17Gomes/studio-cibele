@@ -21,7 +21,15 @@ export default function About() {
         transition={{ delay: 0.5 }}
       >
         <h2>Sobre Mim</h2>
-        <p>Texto provisório sobre o estúdio em breve dicas de unhas e muito mais para você ficar por dentro…</p>
+        <p>
+          Olá! Sou a <strong>Cibele Gomes</strong>, apaixonada pelo universo das unhas e dedicada a realçar a beleza de cada cliente com carinho, cuidado e criatividade. Com anos de experiência e atenção aos mínimos detalhes, ofereço serviços personalizados para valorizar seu estilo e autoestima.
+        </p>
+        <p>
+          Aqui, cada atendimento é feito com amor, usando produtos de qualidade e técnicas modernas. Meu objetivo é que você se sinta linda, confiante e bem cuidada – sempre!
+        </p>
+        <p>
+          Venha viver essa experiência única. 💖
+        </p>
       </motion.div>
     </div>
   );
