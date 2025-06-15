@@ -12,10 +12,10 @@ import serv6 from '../assets/serv6.jpg';
 
 const services = [
   { title: 'Pé e Mão', img: serv1 },
-  { title: 'Só Pé',        img: serv2 },
-  { title: 'Só Mão',         img: serv3 },
-  { title: 'Alongamento',   img: serv4 },
-  { title: 'Banho em gel ',   img: serv5 },
+  { title: 'Pé',        img: serv2 },
+  { title: 'Mão',         img: serv3 },
+  { title: 'Banho em gel ',   img: serv4 },
+  { title: 'Alongamento' ,   img: serv5 },
   { title: 'Plástica dos Pés ',   img: serv6 },
 
 ];

@@ -5,14 +5,40 @@
   text-align: center;
 }
 
-.video-wrapper {
-  margin: 20px 0;
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+/* IMAGEM E TEXTO LADO A LADO */
+.image-text-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
-.video-wrapper iframe {
+.blog-image-side {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.blog-text-side {
+  max-width: 500px;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+/* VÍDEO */
+.video-wrapper.small {
+  margin: 20px auto;
+  position: relative;
+  padding-bottom: 40%;
+  height: 0;
+  max-width: 600px;
+}
+
+.video-wrapper.small iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,6 +47,7 @@
   border-radius: 12px;
 }
 
+/* BOTÕES */
 .blog-buttons {
   margin-top: 20px;
   display: flex;
@@ -29,7 +56,8 @@
   align-items: center;
 }
 
-.blog-buttons a {
+.blog-buttons a,
+.blog-back-button {
   padding: 10px 20px;
   background: linear-gradient(to right, #ff69b4, #9932cc);
   color: white;
@@ -39,6 +67,35 @@
   transition: transform 0.2s;
 }
 
-.blog-buttons a:hover {
+.blog-buttons a:hover,
+.blog-back-button:hover {
   transform: scale(1.05);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .image-text-section {
+    flex-direction: column;
+  }
+
+  .blog-text-side {
+    text-align: center;
+  }
+}
+
+.blog-choice-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.blog-back-button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #ff69b4, #9932cc);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
 }

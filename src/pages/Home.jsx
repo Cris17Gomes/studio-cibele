@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from 'react';
 import Carousel from '../components/Carousel';
 import HomeButtons from '../components/HomeButtons';
