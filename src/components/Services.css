@@ -9,6 +9,10 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin-top: 30px;
+
+  max-width: 900px;      /* Limita a largura total */
+  margin-left: auto;     /* Centraliza horizontalmente */
+  margin-right: auto;    /* Centraliza horizontalmente */
 }
 
 .service-card {
@@ -27,4 +31,17 @@
   width: 100%;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.service-card p {
+  font-weight: 600; /* ou 700 para mais grosso, 500 para menos */
+  font-size: 1rem;  /* ajusta o tamanho se quiser */
+  margin: 0;        /* tira margens extras, opcional */
+}
+
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* Uma coluna só no celular */
+  }
 }

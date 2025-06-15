@@ -11,6 +11,10 @@ export default function ScrollToTop() {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    setTimeout(() => {
+    toggleVisible();
+  }, 500);
   };
 
   useEffect(() => {
