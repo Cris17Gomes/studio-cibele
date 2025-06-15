@@ -29,14 +29,17 @@
 
 .service-card img {
   width: 100%;
+  height: 180px;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
+
 .service-card p {
-  font-weight: 600; /* ou 700 para mais grosso, 500 para menos */
-  font-size: 1rem;  /* ajusta o tamanho se quiser */
-  margin: 0;        /* tira margens extras, opcional */
+  font-weight: 600; 
+  font-size: 1rem;  
+  margin: 0;        
 }
 
 

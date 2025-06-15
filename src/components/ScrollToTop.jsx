@@ -5,16 +5,15 @@ export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop;
+    const scrolled = document.documentElement.scrollTop || document.body.scrollTop;
     setVisible(scrolled > 300);
   };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-
     setTimeout(() => {
-    toggleVisible();
-  }, 500);
+      toggleVisible();
+    }, 600);
   };
 
   useEffect(() => {
