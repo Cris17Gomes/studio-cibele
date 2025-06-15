@@ -11,7 +11,7 @@ export default function BlogPage() {
         <h2>Escolha como ver a Dica de Unha</h2>
 
         <div className="blog-choice-buttons">
-          <Link to="/blog/texto" className="card-button">Texto + Imagem</Link>
+          <Link to="/blog/texto" className="card-button">Texto</Link>
           <Link to="/blog/video" className="card-button">Vídeo</Link>
         </div>
 
