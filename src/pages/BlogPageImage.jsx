@@ -9,12 +9,30 @@ export default function BlogPageImage() {
     <div className="App">
       <div className="blog-container">
         <h2>Dica de Unha: Francesinha Moderna</h2>
+        <Link to="/blog" className="back-arrow">← Voltar</Link>
+
 
         <div className="image-text-section">
           <img src={blogImg} alt="Francesinha moderna" className="blog-image-side" />
 
           <p className="blog-text-side">
             A francesinha nunca sai de moda, mas você pode inovar usando tons diferentes, glitter ou até desenhos delicados.
+            Uma dica é usar fita adesiva para deixar a linha perfeita. Finalize com um top coat para brilho duradouro!
+             A francesinha nunca sai de moda, mas você pode inovar usando tons diferentes, glitter ou até desenhos delicados.
+            Uma dica é usar fita adesiva para deixar a linha perfeita. Finalize com um top coat para brilho duradouro!
+             A francesinha nunca sai de moda, mas você pode inovar usando tons diferentes, glitter ou até desenhos delicados.
+            Uma dica é usar fita adesiva para deixar a linha perfeita. Finalize com um top coat para brilho duradouro!
+             A francesinha nunca sai de moda, mas você pode inovar usando tons diferentes, glitter ou até desenhos delicados.
+            Uma dica é usar fita adesiva para deixar a linha perfeita. Finalize com um top coat para brilho duradouro!
+             A francesinha nunca sai de moda, mas você pode inovar usando tons diferentes, glitter ou até desenhos delicados.
+            Uma dica é usar fita adesiva para deixar a linha perfeita. Finalize com um top coat para brilho duradouro!
+             A francesinha nunca sai de moda, mas você pode inovar usando tons diferentes, glitter ou até desenhos delicados.
+            Uma dica é usar fita adesiva para deixar a linha perfeita. Finalize com um top coat para brilho duradouro!
+             A francesinha nunca sai de moda, mas você pode inovar usando tons diferentes, glitter ou até desenhos delicados.
+            Uma dica é usar fita adesiva para deixar a linha perfeita. Finalize com um top coat para brilho duradouro!
+             A francesinha nunca sai de moda, mas você pode inovar usando tons diferentes, glitter ou até desenhos delicados.
+            Uma dica é usar fita adesiva para deixar a linha perfeita. Finalize com um top coat para brilho duradouro!
+             A francesinha nunca sai de moda, mas você pode inovar usando tons diferentes, glitter ou até desenhos delicados.
             Uma dica é usar fita adesiva para deixar a linha perfeita. Finalize com um top coat para brilho duradouro!
           </p>
         </div>

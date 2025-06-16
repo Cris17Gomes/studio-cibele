@@ -5,39 +5,41 @@
   text-align: center;
 }
 
-/* IMAGEM E TEXTO LADO A LADO */
-.image-text-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 30px;
+/* IMAGEM E TEXTO 3 CANTOS*/
+.blog-image-side {
+  float: left;
+  width: 300px;
+  margin: 0 30px 20px 0;
+  shape-outside: inset(0px round 12px); /* Permite o texto fluir ao redor com cantos arredondados */
+  clip-path: inset(0px round 12px);     /* Recorta visualmente igual ao shape */
+  border-radius: 12px;
+  shape-margin: 10px; /* Dá espaçamento entre a imagem e o texto */
 }
 
-.blog-image-side {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 12px;
+.image-text-section {
+  overflow: hidden; /* Garante que o float funcione corretamente */
+  text-align: justify;
 }
 
 .blog-text-side {
-  max-width: 500px;
-  text-align: left;
   font-size: 1rem;
   line-height: 1.6;
-  padding: 10px;
+  padding: 5px;
+  text-align: justify;
 }
+
+
+
 
 /* VÍDEO */
 .video-wrapper.small {
   margin: 20px auto;
-  position: relative;
-  padding-bottom: 40%;
-  height: 0;
   max-width: 600px;
+  height: 280px; /* altura real do vídeo */
+  position: relative;
 }
 
+/* Agora o iframe preenche exatamente essa altura */
 .video-wrapper.small iframe {
   position: absolute;
   top: 0;
@@ -46,6 +48,7 @@
   height: 100%;
   border-radius: 12px;
 }
+
 
 /* BOTÕES */
 .blog-buttons {
@@ -98,4 +101,31 @@
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+}
+
+.back-arrow {
+  display: inline-block;
+  margin: 10px 0 20px;
+  color: #b10076;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.back-arrow:hover {
+  transform: translateX(-5px);
+}
+@media (max-width: 768px) {
+  .blog-image-side {
+    float: none;
+    display: block;
+    margin: 0 auto 20px;
+    clip-path: none;
+    shape-outside: none;
+  }
+
+  .blog-text-side {
+    text-align: left;
+  }
 }

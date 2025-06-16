@@ -8,6 +8,8 @@ export default function BlogPageVideo() {
     <div className="App">
       <div className="blog-container">
         <h2>Dica de Unha: Francesinha Moderna</h2>
+        <Link to="/blog" className="back-arrow">← Voltar</Link>
+
 
         <div className="video-wrapper small">
           <iframe
