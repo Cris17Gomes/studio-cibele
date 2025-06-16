@@ -1,3 +1,31 @@
+/* Container geral do carrossel */
+.carousel-container {
+  padding: 20px 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Header do carrossel */
+.carousel-header {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.carousel-header h2 {
+  font-size: 1.8rem;
+  color: #b10076;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.carousel-header p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Carrossel */
 .carousel {
   width: 100%;
   max-width: 800px;
@@ -13,12 +41,13 @@
   /* Borda degradê */
   border: 4px solid transparent;
   border-radius: 15px;
-  background-image: linear-gradient(#f3f0f0, #f3f0f0), 
+  background-image: linear-gradient(#f3f0f0, #f3f0f0),
                     linear-gradient(to right, #ff69b4, #9932cc);
   background-origin: border-box;
   background-clip: content-box, border-box;
 }
 
+/* Track (faixa) do carrossel */
 .carousel-track {
   display: flex;
   width: 400%;
@@ -26,6 +55,7 @@
   animation: slide 32s infinite ease-in-out;
 }
 
+/* Imagens do carrossel */
 .carousel-image {
   width: 100%;
   height: 100%;
@@ -42,19 +72,7 @@
   cursor: pointer;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .carousel {
-    height: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .carousel {
-    height: 180px;
-  }
-}
-
+/* Animação do slide */
 @keyframes slide {
   0%   { transform: translateX(0%); }
   25%  { transform: translateX(-100%); }
@@ -92,7 +110,7 @@
   object-fit: contain;
 }
 
-/* Close button */
+/* Botão fechar modal */
 .modal-close {
   position: absolute;
   top: -10px;
@@ -116,24 +134,44 @@
   background: #9932cc;
 }
 
-/* Cabeçalho do carrossel */
-.carousel-container {
-  padding: 20px;
+/* ================== */
+/* RESPONSIVIDADE */
+/* ================== */
+
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 15px 10px;
+  }
+
+  .carousel-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .carousel-header p {
+    font-size: 0.9rem;
+  }
+
+  .carousel {
+    height: 250px;
+    max-width: 100%;
+  }
 }
 
-.carousel-header {
-  text-align: center;
-  margin-bottom: 15px;
-}
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 10px 8px;
+  }
 
-.carousel-header h2 {
-  font-size: 1.8rem;
-  color: #b10076;
-  margin: 0;
-}
+  .carousel-header h2 {
+    font-size: 1.1rem;
+  }
 
-.carousel-header p {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 5px;
+  .carousel-header p {
+    font-size: 0.8rem;
+  }
+
+  .carousel {
+    height: 180px;
+    max-width: 100%;
+  }
 }
