@@ -18,7 +18,7 @@
 }
 
 .scroll-to-top.show {
-  opacity: 0;
+  opacity: 0.2;
   pointer-events: auto;
   transform: scale(1.05);
 }

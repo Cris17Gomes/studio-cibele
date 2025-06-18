@@ -31,7 +31,7 @@ export default function BlogPageVideo() {
           </a>
 
           <a
-            href="https://wa.me/?text=Confira%20essa%20dica%20de%20unha!%20https://studio-cibele.vercel.app/blog/video"
+            href="https://wa.me/?text=Confira%20essa%20dica%20de%20unha!%20https://cibelegomesnails.vercel.app/blog/video"
             target="_blank"
             rel="noopener noreferrer"
           >

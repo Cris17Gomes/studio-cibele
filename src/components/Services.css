@@ -12,7 +12,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   margin-top: 30px;
-  max-width: 790px;
+  max-width: 690px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -22,11 +22,17 @@
   background: #fff0f5;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.2); /* sombra roxa suave */
+  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.2);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   opacity: 0;
   animation: fadeInCard 1.2s ease forwards;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
+
 
 /* Delay diferente para cada card (opcional via classe) */
 .service-card:nth-child(1) { animation-delay: 0.2s; }
@@ -41,9 +47,10 @@
 
 /* Imagem dentro do card */
 .service-card img {
-  width: 90%;
-  height: 180px;
-  object-fit:initial;
+  width: 100%;
+  height: auto;
+  max-height: 250px; /* controla a altura máxima, pode ajustar conforme necessário */
+  object-fit: cover; /* garante que a imagem não corte */
   border-radius: 10px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;

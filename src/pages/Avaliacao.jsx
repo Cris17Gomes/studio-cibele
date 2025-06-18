@@ -25,12 +25,13 @@ export default function Avaliacao() {
           </a>
 
           <a
-            href="https://wa.me/?text=Deixe%20sua%20avalia%C3%A7%C3%A3o%20sobre%20o%20atendimento%20da%20Studio%20Cibele:%20https://studio-cibele.vercel.app/avaliacao"
+            href="https://wa.me/?text=Deixe%20sua%20avalia%C3%A7%C3%A3o%20sobre%20o%20atendimento%20da%20Studio%20Cibele:%20https://cibelegomesnails.vercel.app/avaliacao"
             target="_blank"
             rel="noopener noreferrer"
           >
             Compartilhar no WhatsApp
           </a>
+
 
           <Link to="/" className="blog-back-button">
             Voltar para a Página Inicial
