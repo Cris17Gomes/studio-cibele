@@ -11,7 +11,9 @@ export default function Carousel() {
   return (
     <div className="carousel-container">
       <div className="carousel-header">
-        <h2>✨ Transforme suas unhas em arte! ✨</h2>
+<h2>
+  <span className="magic-icon">✨</span> Transforme suas unhas em arte! <span className="magic-icon">✨</span>
+</h2>
         <p>Confira alguns dos nossos trabalhos recentes 💅</p>
       </div>
 

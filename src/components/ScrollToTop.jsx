@@ -4,17 +4,16 @@ import './ScrollToTop.css';
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
 
-  const toggleVisible = () => {
-    const scrolled = document.documentElement.scrollTop || document.body.scrollTop;
-    setVisible(scrolled > 300);
-  };
+ const toggleVisible = () => {
+  const scrolled = window.scrollY || document.documentElement.scrollTop;
+  setVisible(scrolled > 300);
+};
+
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    setTimeout(() => {
-      toggleVisible();
-    }, 600);
-  };
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 
   useEffect(() => {
     window.addEventListener('scroll', toggleVisible);

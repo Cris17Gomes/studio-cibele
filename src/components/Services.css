@@ -1,50 +1,91 @@
 .services {
   padding: 40px 20px;
-  background-color: #fdf1f7;
+  background-color: #fff0f5;
   text-align: center;
+  color: #4b0082;
+  animation: fadeSlideUp 1.2s ease-in-out both;
 }
 
+/* Grid dos cards */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin-top: 30px;
-
-  max-width: 900px;      /* Limita a largura total */
-  margin-left: auto;     /* Centraliza horizontalmente */
-  margin-right: auto;    /* Centraliza horizontalmente */
+  max-width: 790px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Card individual com animação inicial */
 .service-card {
-  background: white;
+  background: #fff0f5;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 4px 12px rgba(155, 89, 182, 0.2); /* sombra roxa suave */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  animation: fadeInCard 1.2s ease forwards;
 }
+
+/* Delay diferente para cada card (opcional via classe) */
+.service-card:nth-child(1) { animation-delay: 0.2s; }
+.service-card:nth-child(2) { animation-delay: 0.4s; }
+.service-card:nth-child(3) { animation-delay: 0.6s; }
+/* Adicione mais conforme o número de cards */
 
 .service-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(155, 89, 182, 0.4);
 }
 
+/* Imagem dentro do card */
 .service-card img {
   width: 100%;
   height: 180px;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
+  transition: transform 0.3s ease;
 }
 
+.service-card:hover img {
+  transform: scale(1.02);
+}
 
+/* Texto do card */
 .service-card p {
-  font-weight: 600; 
-  font-size: 1rem;  
-  margin: 0;        
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
 }
 
-
+/* Responsivo */
 @media (max-width: 768px) {
   .services-grid {
-    grid-template-columns: 1fr; /* Uma coluna só no celular */
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== ANIMAÇÕES ===== */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
