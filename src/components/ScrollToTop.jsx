@@ -4,8 +4,8 @@ import './ScrollToTop.css';
 export default function ScrollToTop() {
   const [visible, setVisible] = useState(false);
 
- const toggleVisible = () => {
-  const scrolled = window.scrollY || document.documentElement.scrollTop;
+const toggleVisible = () => {
+  const scrolled = window.pageYOffset;
   setVisible(scrolled > 300);
 };
 
