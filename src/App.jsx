@@ -6,6 +6,7 @@ import Home from './pages/Home';
 
 import ScrollToTop from './components/ScrollToTop'; // Botão flutuante
 import ScrollToTopOnRouteChange from './components/ScrollToTopOnRouteChange'; // Corrige scroll na troca de rota
+import Avaliacao from './pages/Avaliacao';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/texto" element={<BlogPageImage />} />
         <Route path="/blog/video" element={<BlogPageVideo />} />
+        <Route path="/avaliacao" element={<Avaliacao />} />
       </Routes>
     </>
   );
