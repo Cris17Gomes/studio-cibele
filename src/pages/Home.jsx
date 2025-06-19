@@ -22,7 +22,7 @@ export default function Home() {
 
       <ScrollToTop />
       <Footer />
-      <img src="https://api.visitorbadge.io/api/visitors?path=cibelegomesnails&label=Visitantes&countColor=%23f072d1&labelColor=%23e8c1f8&style=flat" alt="visitantes" />
+      <img src="https://api.visitorbadge.io/api/visitors?path=cibelegomesnails&label=Visitantes&countColor=%23f072d1&labelColor=%23e8c1f8&style=flat" alt="visitors" />
 
     </div>
   );
