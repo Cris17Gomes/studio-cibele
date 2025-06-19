@@ -1,10 +1,17 @@
 .blog-container {
-  padding: 40px 20px;
-  background: #fff0f5;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Centraliza verticalmente */
+  align-items: center;       /* Centraliza horizontalmente */
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background: #fff0f5;
   text-align: center;
   color: #4b0082;
 }
+
+
 
 /* ==== IMAGEM E TEXTO 3 CANTOS ==== */
 .image-text-section {
