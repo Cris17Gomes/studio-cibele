@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import avaliacaoImg from '../assets/avaliacao.jpg'; // Coloque a imagem em src/assets/
 import './BlogPage.css'; // Reutiliza o mesmo CSS estilizado
+import Footer from '../components/Footer';
 
 export default function Avaliacao() {
   return (
@@ -38,6 +39,7 @@ export default function Avaliacao() {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
