@@ -82,6 +82,6 @@
 
   .service-card img {
     max-height: 200px; /* Reduz altura máxima da imagem no mobile */
-    object-fit: contain; /* Melhora a proporção para retrato */
+    object-fit: fill; /* Melhora a proporção para retrato */
   }
 }
