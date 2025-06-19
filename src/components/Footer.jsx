@@ -19,6 +19,13 @@ export default function Footer() {
       <p className="footer-text">
   © 2025 Desenvolvido por Cristiano Gomes. Todos os direitos reservados.
 </p>
+<div className="visitor-counter">
+  <img
+    src="https://api.visitorbadge.io/api/visitors?path=cibelegomesnails&label=Visitors&countColor=%23f072d1&labelColor=%23e8c1f8&style=flat"
+    alt="visitors"
+  />
+</div>
+
 
     </footer>
   );

@@ -1,3 +1,4 @@
+/* ===== CONTAINER PRINCIPAL ===== */
 .blog-container {
   min-height: 100vh;
   display: flex;
@@ -11,9 +12,7 @@
   color: #4b0082;
 }
 
-
-
-/* ==== IMAGEM E TEXTO 3 CANTOS ==== */
+/* ===== IMAGEM E TEXTO ===== */
 .image-text-section {
   overflow: hidden;
   text-align: justify;
@@ -38,7 +37,6 @@
   display: block;
 }
 
-
 .blog-text-side {
   font-size: 1rem;
   line-height: 1.6;
@@ -46,16 +44,14 @@
   text-align: justify;
 }
 
-/* ==== VÍDEO ==== */
+/* ===== VÍDEO ===== */
 .video-wrapper.small {
   margin: 20px auto;
-  max-width: 700px; /* ou qualquer valor desejado */
+  max-width: 700px;
   height: 0;
-  padding-bottom: 30%; /* MENOR altura — ajuste conforme necessário */
+  padding-bottom: 30%; /* proporção horizontal */
   position: relative;
 }
-
-
 
 .video-wrapper.small iframe {
   position: absolute;
@@ -66,24 +62,28 @@
   border-radius: 12px;
 }
 
-/* ==== BOTÕES GERAIS ==== */
+/* ===== BOTÕES GERAIS (Compartilhar, Voltar, etc.) ===== */
 .blog-buttons {
-  margin-top: 20px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
   align-items: center;
 }
 
 .blog-buttons a,
 .blog-back-button {
-  padding: 10px 20px;
+  padding: 12px 28px;
+  font-size: 1.05rem;
   background: linear-gradient(to right, #ff69b4, #9932cc);
   color: white;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.2s;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
 }
 
 .blog-buttons a:hover,
@@ -91,7 +91,7 @@
   transform: scale(1.05);
 }
 
-/* ==== BOTÕES DE ESCOLHA ==== */
+/* ===== BOTÕES DE ESCOLHA (Texto / Vídeo) ===== */
 .blog-choice-buttons {
   display: flex;
   flex-direction: column;
@@ -100,14 +100,27 @@
   margin: 40px 0;
 }
 
-/* ==== BOTÃO VOLTAR E SETA ==== */
-.blog-back-button {
-  padding: 10px 20px;
+.blog-choice-buttons a {
+  padding: 14px 32px;
+  font-size: 1.15rem;
   background: linear-gradient(to right, #ff69b4, #9932cc);
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
+  transition: transform 0.2s;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.blog-choice-buttons a:hover {
+  transform: scale(1.07);
+}
+
+/* ===== BOTÃO VOLTAR COM SETA ===== */
+.blog-back-button {
+  margin-top: 20px;
 }
 
 .back-arrow {
@@ -124,7 +137,7 @@
   transform: translateX(-5px);
 }
 
-/* ==== RESPONSIVO (Celular) ==== */
+/* ===== RESPONSIVO (CELULAR) ===== */
 @media (max-width: 768px) {
   .blog-image-side {
     float: none;
@@ -148,7 +161,14 @@
   }
 
   .video-wrapper.small {
-    padding-bottom: 56.25%; /* mantém 16:9 no mobile também */
+    padding-bottom: 56.25%; /* 16:9 no mobile */
     height: auto;
+  }
+
+  .blog-buttons a,
+  .blog-back-button,
+  .blog-choice-buttons a {
+    font-size: 1rem;
+    padding: 12px 20px;
   }
 }

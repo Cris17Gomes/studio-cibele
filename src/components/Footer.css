@@ -27,3 +27,15 @@
   color: #333;
   text-align: center;
 }
+.visitor-counter {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  opacity: 0.3; /* transparência */
+  z-index: 9999;
+}
+
+.visitor-counter img {
+  max-width: 130px;
+  height: auto;
+}
