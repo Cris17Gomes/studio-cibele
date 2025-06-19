@@ -3,14 +3,34 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* Centraliza verticalmente */
-  align-items: center;       /* Centraliza horizontalmente */
+  justify-content: center;
+  align-items: center;
   padding: 40px 20px;
   box-sizing: border-box;
   background: #fff0f5;
   text-align: center;
   color: #4b0082;
 }
+
+/* ===== VÍDEO ===== */
+.video-wrapper.small {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  margin: 20px auto;
+}
+
+.video-wrapper.small iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
 
 /* ===== IMAGEM E TEXTO ===== */
 .image-text-section {
@@ -21,10 +41,10 @@
 /* Controle do tamanho da imagem */
 .blog-image-side {
   display: block;
-  margin: 0 auto 20px auto; /* centraliza horizontal e margem embaixo */
-  max-width: 400px;          /* tamanho máximo da imagem - ajuste aqui */
-  width: 100%;               /* responsivo */
-  height: auto;              /* mantém proporção */
+  margin: 0 auto 20px auto;
+  max-width: 400px;
+  width: 100%;
+  height: auto;
   border-radius: 12px;
 }
 
@@ -46,24 +66,6 @@
   text-align: justify;
 }
 
-/* ===== VÍDEO ===== */
-.video-wrapper.small {
-  margin: 20px auto;
-  max-width: 700px;
-  height: 0;
-  padding-bottom: 30%; /* proporção horizontal */
-  position: relative;
-}
-
-.video-wrapper.small iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
-}
-
 /* ===== BOTÕES GERAIS (Compartilhar, Voltar, etc.) ===== */
 .blog-buttons {
   margin-top: 5px;
@@ -73,6 +75,8 @@
   align-items: center;
 }
 
+/* Botões de texto, vídeo e voltar uniformizados */
+.blog-choice-buttons a,
 .blog-buttons a,
 .blog-back-button {
   padding: 12px 28px;
@@ -84,10 +88,11 @@
   font-weight: bold;
   transition: transform 0.2s;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   text-align: center;
 }
 
+.blog-choice-buttons a:hover,
 .blog-buttons a:hover,
 .blog-back-button:hover {
   transform: scale(1.05);
@@ -99,30 +104,12 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin: 40px 0;
-}
-
-.blog-choice-buttons a {
-  padding: 14px 32px;
-  font-size: 1.15rem;
-  background: linear-gradient(to right, #ff69b4, #9932cc);
-  color: white;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.2s;
-  width: 100%;
-  max-width: 300px;
-  text-align: center;
-}
-
-.blog-choice-buttons a:hover {
-  transform: scale(1.07);
+  margin: 10px 0;
 }
 
 /* ===== BOTÃO VOLTAR COM SETA ===== */
 .blog-back-button {
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 .back-arrow {
@@ -145,7 +132,7 @@
     float: none;
     clip-path: none;
     shape-outside: none;
-    max-width: 300px; /* pode ajustar para algo menor, se quiser */
+    max-width: 300px;
     width: 100%;
     height: auto;
     margin: 0 auto 20px;
@@ -155,7 +142,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* centraliza o texto no mobile */
+    text-align: center;
   }
 
   .blog-text-side {
@@ -164,7 +151,7 @@
   }
 
   .video-wrapper.small {
-    padding-bottom: 56.25%; /* 16:9 no mobile */
+    padding-bottom: 56.25%;
     height: auto;
   }
 
@@ -189,7 +176,7 @@
 
 /* ===== CAIXA DE TENDÊNCIA DE COR ===== */
 .color-trend-box {
-  background: rgba(230, 220, 255, 0.4); /* Lavanda translúcido */
+  background: rgba(230, 220, 255, 0.4);
   border-left: 6px solid #b57edc;
   padding: 20px;
   margin: 30px 0;

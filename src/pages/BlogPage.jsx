@@ -15,7 +15,7 @@ export default function BlogPage() {
         </div>
 
         <div className="blog-buttons">
-          <Link to="/" className="blog-back-button">Voltar para a Página Inicial</Link>
+          <Link to="/" className="blog-back-button">Voltar para o Início</Link>
         </div>
       </div>
 
