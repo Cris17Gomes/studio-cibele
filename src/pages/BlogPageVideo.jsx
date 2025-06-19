@@ -13,7 +13,7 @@ export default function BlogPageVideo() {
 
         <div className="video-wrapper small">
           <iframe
-            src="https://www.youtube.com/embed/o6gOaIO71-Y"
+            src="https://www.youtube.com/embed/xKMIIhm6wxs"
             title="Dica de Unha"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -23,7 +23,7 @@ export default function BlogPageVideo() {
 
         <div className="blog-buttons">
           <a
-            href="https://www.youtube.com/watch?v=o6gOaIO71-Y"
+            href="https://www.youtube.com/watch?v=xKMIIhm6wxs"
             target="_blank"
             rel="noopener noreferrer"
           >
