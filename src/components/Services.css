@@ -48,14 +48,12 @@
 /* Imagem dentro do card */
 .service-card img {
   width: 100%;
-  height: auto;
-  max-height: 250px; /* controla a altura máxima, pode ajustar conforme necessário */
-  object-fit: fill; /* garante que a imagem não corte */
+  height: 220px; /* Altura fixa e padronizada */
+  object-fit: cover; /* Corta o excesso mas mantém proporção bonita */
   border-radius: 10px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
-
 .service-card:hover img {
   transform: scale(1.02);
 }
@@ -68,7 +66,6 @@
 }
 
 /* Responsivo */
-/* Responsivo para celular */
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -81,7 +78,7 @@
   }
 
   .service-card img {
-    max-height: 200px; /* Reduz altura máxima da imagem no mobile */
-    object-fit: fill; /* Melhora a proporção para retrato */
+    height: 180px; /* Menor altura no mobile */
+    object-fit: cover;
   }
 }
