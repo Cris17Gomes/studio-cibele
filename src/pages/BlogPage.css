@@ -18,16 +18,17 @@
   text-align: justify;
 }
 
+/* Controle do tamanho da imagem */
 .blog-image-side {
-  float: left;
-  width: 300px;
-  margin: 0 30px 20px 0;
-  shape-outside: inset(0 round 12px);
-  clip-path: inset(0 round 12px);
+  display: block;
+  margin: 0 auto 20px auto; /* centraliza horizontal e margem embaixo */
+  max-width: 400px;          /* tamanho máximo da imagem - ajuste aqui */
+  width: 100%;               /* responsivo */
+  height: auto;              /* mantém proporção */
   border-radius: 12px;
-  shape-margin: 10px;
 }
 
+/* ===== IMAGEM DE AVALIAÇÃO ===== */
 .avaliacao-image {
   max-width: 300px;
   width: 100%;
@@ -37,6 +38,7 @@
   display: block;
 }
 
+/* ===== TEXTO LATERAL ===== */
 .blog-text-side {
   font-size: 1rem;
   line-height: 1.6;
@@ -96,7 +98,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin: 40px 0;
 }
 
@@ -141,18 +143,19 @@
 @media (max-width: 768px) {
   .blog-image-side {
     float: none;
-    display: block;
-    margin: 0 auto 20px;
     clip-path: none;
     shape-outside: none;
-    border-radius: 12px;
+    max-width: 300px; /* pode ajustar para algo menor, se quiser */
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
   }
 
   .image-text-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
+    text-align: center; /* centraliza o texto no mobile */
   }
 
   .blog-text-side {
@@ -171,4 +174,38 @@
     font-size: 1rem;
     padding: 12px 20px;
   }
+
+  .blog-buttons {
+    width: 100%;
+    align-items: center;
+  }
+
+  .blog-buttons a,
+  .blog-back-button {
+    max-width: 300px;
+    width: 90%;
+  }
+}
+
+/* ===== CAIXA DE TENDÊNCIA DE COR ===== */
+.color-trend-box {
+  background: rgba(230, 220, 255, 0.4); /* Lavanda translúcido */
+  border-left: 6px solid #b57edc;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 12px;
+  text-align: left;
+  color: #4b0082;
+  box-shadow: 0 4px 12px rgba(179, 126, 220, 0.15);
+}
+
+.color-trend-box h3 {
+  margin-top: 0;
+  color: #9932cc;
+}
+
+.color-trend-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0 0;
 }
