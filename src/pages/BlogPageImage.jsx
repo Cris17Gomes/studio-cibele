@@ -9,7 +9,7 @@ export default function BlogPageImage() {
     <div className="App">
       <div className="blog-container">
         <h2>Dica de Unha</h2>
-        <Link to="/blog" className="back-arrow">← Voltar</Link>
+        {/* <Link to="/blog" className="back-arrow">← Voltar</Link> */}
 
         {/* Seção de Cor da Semana */}
         <div className="color-trend-box">
