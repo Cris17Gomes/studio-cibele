@@ -9,7 +9,7 @@ const buttons = [
   { label: 'Deixe sua avaliação', link: '/avaliacao', internal: true },
   { label: 'Sobre Mim', link: '#sobre', anchor: true },
   { label: 'Nossos Serviços', link: '#servicos', anchor: true },
-  { label: 'Dicas de Unhas', link: '/blog', internal: true }
+  { label: 'Dicas de Unhas', link: '/blog/texto', internal: true }
 ];
 
 export default function HomeButtons() {
